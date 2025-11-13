@@ -1,0 +1,146 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/kometa-team/kometa/nightly/json-schema/config-schema.json
+## Do not remove the above line
+## python kometa.py -r
+## python kometa.py --run
+
+## Plex and TMDb are the two connections which are required for the script to run
+plex:                              # Can be individually specified per library as well; REQUIRED for the script to run
+  url: http://192.168.50.5:32400   # Enter Plex URL (REQUIRED); this needs to point to your server, not app.plex.tv
+  token:  plex_token_here          # Enter Plex Token (REQUIRED) https://kometa.wiki/en/latest/kometa/install/walkthroughs/docker/?h=plex+token#getting-a-plex-url-and-token
+  timeout: 60
+  db_cache: 40
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  verify_ssl: true
+tmdb:
+  apikey: tmdb_api_key             # TMDb API Key (REQUIRED) https://kometa.wiki/en/latest/kometa/install/walkthroughs/docker/?h=tmdb+api#getting-a-tmdb-api-key
+  cache_expiration: 60
+  language: en
+  region: gb
+
+## At least one library has to be configured for the script to do anything meaningful
+libraries:                         # This is called out once within the config.yml file
+  Movies:                          # These are names of libraries in your Plex
+    remove_overlays: false         # Set this to true to remove all overlays
+    collection_files:
+    - default: basic               # Newly Released, New Episodes
+    - default: imdb                # IMDb Popular, IMDb Top 250
+    - default: seasonal            # Dynamically creates seasonal collections based on holidays
+    - default: actor               # Dynamically creates collections based on the most popular actors in your library
+      template_variables:
+        style: signature
+    - default: director            # Collections based on the most popular directors in your library
+      template_variables:
+        style: signature
+    - default: studio              # Collections based on the studios available in your library
+      template_variables:
+        include: 
+          - Pixar
+          - Studio Ghibli
+    - default: oscars              # Academy Awards (Oscars) Award winners
+    - default: bafta               # Bafta winners
+    - default: cannes              # Cannes Film Festival winners
+    - default: universe            # Popular Movie universes
+      template_variables:
+        append_data:
+          hammer: Hammer
+          universal: Universal Studios Monsters
+        trakt_list_hammer: https://trakt.tv/users/twentywashere/lists/hammer-horror-thrillers-and-more
+        trakt_list_universal: https://trakt.tv/users/rholman99/lists/universal-classic-monsters-universe
+    - default: franchise           # Collections based on popular Movie franchises
+      template_variables:
+        minimum_items: 3
+    - default: country             # Collections based on country
+      template_variables:
+        include: 
+          - Australia
+          - Canada
+          - China
+          - France
+          - Germany
+          - Hong Kong
+          - Ireland
+          - Italy
+          - Japan
+          - South Korea
+          - United Kingdom
+    - repo: config/movies/movies
+    #     asset_directory: config/assets/collections
+    operations:                      # Uncomment to delete removed Collections
+      delete_collections:
+        configured: false
+        managed: true
+        less: 3
+
+# see the wiki for how to use local files, folders, URLs, or files from git
+settings:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  cache: true
+  cache_expiration: 60
+  asset_directory:
+  - config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order: release
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_unfiltered: false
+  show_options: true
+  show_missing: true
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users:
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo: https://github.com/user/custom-repo    # https://kometa.wiki/en/latest/config/settings/#custom-repo
+  overlay_artwork_filetype: webp_lossy
+  overlay_artwork_quality: 90
+webhooks:                          # Can be individually specified per library as well
+  changes:
+  delete:
+  error:
+  run_end:
+  run_start:
+  version:
+trakt:                             # https://kometa.wiki/en/latest/config/trakt
+  client_id: 
+  client_secret: 
+  pin:
+  force_refresh: false
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
+    scope: 
+    created_at: 
+tautulli:                          # https://kometa.wiki/en/latest/config/tautulli/
+  url: 
+  apikey: 
+github:
+  token: 
