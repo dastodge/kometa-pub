@@ -11,17 +11,22 @@ templates:
       - trakt
       - imdb
       - sort
+      - sonarr
     tmdb_show: <<show>>
     tvdb_show: <<tvdbshow>>
     tvdb_list_details: https://thetvdb.com/lists/<<tvdb>>
     trakt_list_details: https://trakt.tv/users/<<trakt>>
-    imdb_id: <<imdb>>
+    # imdb_id: <<imdb>>
+    imdb_search: 
+      list: <<imdb>>
+      limit: <<limit>>
     sort_title: <<sort>>
+    sonarr_add_missing: <<sonarr>>
 
 collections:
   _XMAS_TV_:
-    template: {name: collection, imdb: ls4156853341, radarr: true}
+    template: {name: collection, imdb: ls4156853341, sonarr: true}
     summary: All the Festive telly you could possibly need!
   _XMAS_Who_:
-    template: {name: collection, imdb: ls4156943594, radarr: true}
+    template: {name: collection, imdb: ls4156943594, sonarr: true}
     summary: All the Festive Doctor Who you could possibly need!
