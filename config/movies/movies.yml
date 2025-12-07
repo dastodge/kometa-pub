@@ -33,18 +33,18 @@ collections:
   The Cornetto Trilogy:
     template: {name: collection, sort: "Cornetto Trilogy", imdb: ls068623110, radarr: true}
     summary: An anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost.
-  DC Animated Universe:
-    template: {name: collection, imdb: ls567731488, limit: 0}
-    summary: The DC Animated Universe (DCAU, also referred to as the Timmverse or Diniverse by fans) is a shared universe centered on a group of animated television series based on DC Comics and produced by Warner Bros. Animation.
-  DC Elseworlds:
-    template: {name: collection, trakt: andresatierf/lists/dc-elseworlds}
-    summary: DC Elseworlds consists of DC adaptations that do not fit within the DCEU/DCU continuity.
+  # DC Animated Universe:
+  #   template: {name: collection, imdb: ls567731488, limit: 0}
+  #   summary: The DC Animated Universe (DCAU, also referred to as the Timmverse or Diniverse by fans) is a shared universe centered on a group of animated television series based on DC Comics and produced by Warner Bros. Animation.
+  # DC Elseworlds:
+  #   template: {name: collection, trakt: andresatierf/lists/dc-elseworlds}
+  #   summary: DC Elseworlds consists of DC adaptations that do not fit within the DCEU/DCU continuity.
   # DC Extended Universe:
   #   template: {name: collection, trakt: twa96/lists/dceu, radarr: true}
   #   summary: The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films produced by DC Studios and distributed by Warner Bros. Pictures.
-  DC Universe: 
-    template: {name: collection, trakt: ianismajoris/lists/dc-universe, radarr: true}
-    summary: The DC Universe (DCU) is an American media franchise and shared universe based on characters from DC Comics publications.
+  # DC Universe: 
+  #   template: {name: collection, trakt: ianismajoris/lists/dc-universe, radarr: true}
+  #   summary: The DC Universe (DCU) is an American media franchise and shared universe based on characters from DC Comics publications.
   The Dollars Trilogy:
     template: {name: collection, sort: "Dollars Trilogy", imdb: ls023916334, limit: 0}
     summary: An Italian film series consisting of three Spaghetti Western films directed by Sergio Leone. The series has become known for establishing the Spaghetti Western genre, and inspiring the creation of many more movies. Theses three movies are consistently listed among the best rated Western films in history.
