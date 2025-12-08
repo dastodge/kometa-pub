@@ -25,9 +25,8 @@ templates:
 
 collections:
   _XMAS_TV_:
-    template: {name: collection, imdb: ls4156853341} , sonarr: true}
+    template: {name: collection, imdb: ls4156853341} # , sonarr: true}
     summary: All the Festive telly you could possibly need!
   _XMAS_Who_:
-    template: {name: collection, imdb: ls4156943594}  # , sonarr: true}
     template: {name: collection, imdb: ls4156943594}  # , sonarr: true}
     summary: All the Festive Doctor Who you could possibly need!
