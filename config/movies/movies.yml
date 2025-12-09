@@ -78,3 +78,6 @@ collections:
   _XMAS_Aoife_:
     template: {name: collection, imdb: ls4156531787, radarr: true}
     summary: "Aoife's Christmas collection! No, Nativity Rocks isn't here either...."
+  _XMAS_JR_:
+    template: {name: collection, imdb: ls4156762814, radarr: true}
+    summary: "JR's finest Christmas collection (apart from Muppets Christmas Carol)! Still no Nativity Rocks...."
