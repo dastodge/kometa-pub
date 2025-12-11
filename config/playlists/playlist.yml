@@ -12,12 +12,12 @@
   #     - name: arr
 
   playlists:
-  _XMAS_TV_:
-    imdb_list: 
-      list_id: ls4156853341
-      sort_by: release.asc
-    sync_mode: sync
-    collection_order: custom
-    libraries: Movies, TV Shows
-    sync_to_users: all
-    url_poster: https://theposterdb.com/api/assets/9220
+    _XMAS_TV_:
+      imdb_list: 
+        list_id: ls4156853341
+        sort_by: release.asc
+      sync_mode: sync
+      collection_order: custom
+      libraries: Movies, TV Shows
+      sync_to_users: all
+      url_poster: https://theposterdb.com/api/assets/9220
