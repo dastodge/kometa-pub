@@ -18,6 +18,6 @@
         sort_by: release.asc
       sync_mode: sync
       collection_order: custom
-      libraries: Movies, TV Shows
+      libraries: TV shows
       sync_to_users: all
       url_poster: https://theposterdb.com/api/assets/9220
