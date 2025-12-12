@@ -56,15 +56,20 @@ collections:
   R2 Movies:
     template: {name: collection, imdb: ls524121118, radarr: true}
     summary: Films that may (or may not) get the R2 seal of approval. Maybe? Who knows!?
+    url_poster: https://theposterdb.com/api/assets/424263
 
   _XMAS_:
     template: {name: collection, imdb: ls4156550451, radarr: true}
     summary: "A Raine family Christmas! No, Nativity Rocks isn't here...."
+    url_poster: https://theposterdb.com/api/assets/110732
 
   _XMAS_Aoife_:
     template: {name: collection, imdb: ls4156531787, radarr: true}
     summary: "Aoife's Christmas collection! No, Nativity Rocks isn't here either...."
+    url_poster: https://theposterdb.com/api/assets/599242
+
 
   _XMAS_JR_:
     template: {name: collection, imdb: ls4156762814, radarr: true}
     summary: "JR's finest Christmas collection (apart from Muppets Christmas Carol)! Still no Nativity Rocks...."
+    url_poster: https://theposterdb.com/api/assets/444598
