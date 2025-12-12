@@ -18,6 +18,19 @@
         sort_by: release.asc
       sync_mode: sync
       collection_order: custom
+      libraries: Movies, TV shows
+      sync_to_users: all
+      url_poster: https://theposterdb.com/api/assets/222124
+
+  playlists:
+    _XMAS_Who_:
+      imdb_list: 
+        list_id: ls4156943594
+        sort_by: release.asc
+      sync_mode: sync
+      collection_order: custom
       libraries: TV shows
       sync_to_users: all
-      url_poster: https://theposterdb.com/api/assets/9220
+      sonarr_add_missing: true
+      url_poster: https://theposterdb.com/api/assets/190874
+
