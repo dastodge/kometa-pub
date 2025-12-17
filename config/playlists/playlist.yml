@@ -18,7 +18,7 @@
         sort_by: release.asc
       sync_mode: sync
       collection_order: custom
-      libraries: Movies, TV shows
+      libraries: TV shows
       sync_to_users: all
       sonarr_add_missing: true
       url_poster: https://theposterdb.com/api/assets/222124
