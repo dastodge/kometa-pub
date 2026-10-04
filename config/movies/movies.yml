@@ -73,6 +73,11 @@ collections:
     summary: The best of the best!
     url_poster: https://theposterdb.com/api/assets/136352
 
+  Niall Halloween:
+    template: {name: collection, imdb: ls4113453124, radarr: true}
+    summary: You should really watch these at Halloween Niall!
+    url_poster: https://theposterdb.com/api/assets/422861
+
   # _XMAS_:
   #   template: {name: collection, imdb: ls4156550451, radarr: true}
   #   summary: "A Raine family Christmas! No, Nativity Rocks isn't here...."
