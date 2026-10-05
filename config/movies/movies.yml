@@ -53,27 +53,27 @@ collections:
     template: {name: collection, imdb: ls072012494, limit: 0}
     summary: Monty Python is a British surreal comedy troupe who created sketch comedy television shows and movies.
 
-  R2 Movies:
+  _R2 Movies_:
     template: {name: collection, imdb: ls524121118, radarr: true}
     summary: Films that may (or may not) get the R2 seal of approval. Maybe? Who knows!?
     url_poster: https://theposterdb.com/api/assets/424263
 
-  Aoife Movies:
+  _Aoife Movies_:
     template: {name: collection, imdb: ls546680362, radarr: true}
     summary: You should really watch these Aoife!
     url_poster: https://theposterdb.com/api/assets/69213
 
-  Niall Movies:
+  _Niall Movies_:
     template: {name: collection, imdb: ls4159130865, radarr: true}
     summary: You should really watch these Niall!
     url_poster: https://theposterdb.com/api/assets/619781
 
-  Films To Be Buried With:
+  _Films To Be Buried With_:
     template: {name: collection, imdb: ls4156227891, radarr: true}
     summary: The best of the best!
     url_poster: https://theposterdb.com/api/assets/136352
 
-  Niall Halloween:
+  _Niall Halloween_:
     template: {name: collection, imdb: ls4113453124, radarr: true}
     summary: You should really watch these at Halloween Niall!
     url_poster: https://theposterdb.com/api/assets/422861
