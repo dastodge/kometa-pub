@@ -15,7 +15,6 @@ templates:
     tmdb_show: <<show>>
     tvdb_show: <<tvdbshow>>
     tvdb_list_details: https://thetvdb.com/lists/<<tvdb>>
-    trakt_list_details: https://trakt.tv/users/<<trakt>>
     # imdb_id: <<imdb>>
     imdb_search: 
       list: <<imdb>>
