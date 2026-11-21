@@ -8,10 +8,10 @@ templates:
       - show
       - tvdb
       - tvdbshow
-      - trakt
       - imdb
       - sort
       - sonarr
+      - limit
     tmdb_show: <<show>>
     tvdb_show: <<tvdbshow>>
     tvdb_list_details: https://thetvdb.com/lists/<<tvdb>>
