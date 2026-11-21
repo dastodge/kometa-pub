@@ -7,15 +7,14 @@ templates:
     optional:
       - collection
       - movie
-      - trakt
       - imdb
       - limit
       - radarr
       - sort 
       - order
+      - limit
     tmdb_collection_details: <<collection>>
     tmdb_movie: <<movie>>
-    trakt_list_details: https://trakt.tv/users/<<trakt>>
     imdb_search: 
       list: <<imdb>>
       limit: <<limit>>
@@ -46,7 +45,7 @@ collections:
     summary: An Italian film series consisting of three Spaghetti Western films directed by Sergio Leone. The series has become known for establishing the Spaghetti Western genre, and inspiring the creation of many more movies. Theses three movies are consistently listed among the best rated Western films in history.
   
   MonsterVerse:
-    template: {name: collection, trakt: superfabio/lists/monsterverse, radarr: true}
+    template: {name: collection, imdb: ls526556773, radarr: true}
     summary: MonsterVerse is an American multimedia franchise and shared universe featuring Godzilla and other sister characters owned and created by Toho Co., Ltd, as well as King Kong.
   
   Monty Python:
@@ -83,18 +82,18 @@ collections:
     summary: You should really watch these at Halloween Niall!
     url_poster: https://theposterdb.com/api/assets/422861
 
-  # _XMAS_:
-  #   template: {name: collection, imdb: ls4156550451, radarr: true}
-  #   summary: "A Raine family Christmas! No, Nativity Rocks isn't here...."
-  #   url_poster: https://theposterdb.com/api/assets/110732
+  _XMAS_:
+    template: {name: collection, imdb: ls4156550451, radarr: true}
+    summary: "A Raine family Christmas! No, Nativity Rocks isn't here...."
+    url_poster: https://theposterdb.com/api/assets/110732
 
-  # _XMAS_Aoife_:
-  #   template: {name: collection, imdb: ls4156531787, radarr: true}
-  #   summary: "Aoife's Christmas collection! No, Nativity Rocks isn't here either...."
-  #   url_poster: https://theposterdb.com/api/assets/599242
+  _XMAS_Aoife_:
+    template: {name: collection, imdb: ls4156531787, radarr: true}
+    summary: "Aoife's Christmas collection! No, Nativity Rocks isn't here either...."
+    url_poster: https://theposterdb.com/api/assets/599242
 
 
-  # _XMAS_JR_:
-  #   template: {name: collection, imdb: ls4156762814, radarr: true}
-  #   summary: "JR's finest Christmas collection (apart from Muppets Christmas Carol)! Still no Nativity Rocks...."
-  #   url_poster: https://theposterdb.com/api/assets/444598
+  _XMAS_JR_:
+    template: {name: collection, imdb: ls4156762814, radarr: true}
+    summary: "JR's finest Christmas collection (apart from Muppets Christmas Carol)! Still no Nativity Rocks...."
+    url_poster: https://theposterdb.com/api/assets/444598
