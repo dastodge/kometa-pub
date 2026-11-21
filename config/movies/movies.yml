@@ -8,7 +8,6 @@ templates:
       - collection
       - movie
       - imdb
-      - limit
       - radarr
       - sort 
       - order
