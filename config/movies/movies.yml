@@ -78,8 +78,8 @@ collections:
 
   Bollywood:
     template: {name: collection, imdb: ls4170306346, radarr: true}
-    summary: You should really watch these at Halloween Niall!
-    url_poster: https://theposterdb.com/api/assets/422861
+    summary: Best dancing shoes!
+    url_poster: https://theposterdb.com/api/assets/745569  
 
   _XMAS_:
     template: {name: collection, imdb: ls4156550451, radarr: true}
